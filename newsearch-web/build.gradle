@@ -1,0 +1,19 @@
+plugins {
+    id 'war'
+}
+
+group 'org.ammigo.newsearch'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //서브 프로젝트간의 의존성 설정
+    compile project(':newsearch-service')
+
+    // spring-boot 2.1.5 version 사용
+    compile('org.springframework.boot:spring-boot-starter-web:2.1.5.RELEASE')
+}
+

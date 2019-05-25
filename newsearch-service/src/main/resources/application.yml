@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: local
+
+---
+
+# local에서는 h2 DB를 바라보게 설정
+spring:
+  profiles: local
+
+  datasource:
+    platform: h2
+# AUTO_SERVER=TRUE 추가하면 여러 프로세스에서 동시에 접속이 가능
+    url: jdbc:h2:~/testdb;AUTO_SERVER=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+
+  h2:
+    console:
+      enabled: true
