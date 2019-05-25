@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'org.ammigo.newsearch'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // h2 database 사용
+    compile('com.h2database:h2:1.4.199')
+}
