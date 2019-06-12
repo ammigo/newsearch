@@ -1,3 +1,2 @@
-insert into user (id, name) values (1, '김기덕');
-insert into user (id, name) values (2, '김현우');
-insert into user (id, name) values (3, '홍종완');
+insert into user (seq, user_id, password, name, email) values (1, 'doubleknd26','1234', '김기덕', 'doubleknd26@naver.com');
+insert into category (seq, item, user_seq) values (1,'political', 1);

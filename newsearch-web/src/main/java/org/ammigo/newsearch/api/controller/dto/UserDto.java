@@ -9,7 +9,7 @@ public class UserDto {
     private String name;
 
     public UserDto(User user) {
-        this.id = user.getId();
+        this.id = user.getSeq();
         this.name = user.getName();
     }
 }
