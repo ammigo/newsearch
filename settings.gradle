@@ -1,5 +1,5 @@
 rootProject.name = 'newsearch'
-include 'newsearch-web'
-include 'newsearch-service'
-include 'newsearch-search'
+include 'web'
+include 'service'
+include 'search'
 
