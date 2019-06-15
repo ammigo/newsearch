@@ -18,10 +18,8 @@ dependencies {
 
 // 서브 프로젝트의 공통 설정
 subprojects {
-    group 'com.woowahan.junior'
-    version '1.0.0'
-
     apply plugin: 'java'
+    apply plugin: 'checkstyle'
 
     sourceCompatibility = 1.8
 
@@ -34,5 +32,10 @@ subprojects {
         compile('org.projectlombok:lombok:1.18.8')
 
         testCompile('junit:junit:4.12')
+    }
+
+    checkstyle {
+        toolVersion = '8.16'
+        configFile = file("${rootDir}/devtools/checkstyle/checkstyle.xml")
     }
 }
