@@ -1,4 +1,4 @@
-package org.ammigo.newsearch.service.user;
+package org.ammigo.newsearch.core.user;
 
 import lombok.extern.slf4j.Slf4j;
 import org.ammigo.newsearch.core.user.model.User;

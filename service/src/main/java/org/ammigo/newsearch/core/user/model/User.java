@@ -34,8 +34,7 @@ public class User {
     @Column(nullable = false)
     private String email;
 
-    @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name="user_seq")
+    @OneToMany(mappedBy = "user", fetch=FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Category> categories;
 
 }

@@ -1,6 +1,7 @@
 package org.ammigo.newsearch.core.category.model;
 
 import lombok.Getter;
+import org.ammigo.newsearch.core.user.model.User;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -17,7 +18,8 @@ public class Category {
     @Column(nullable = false)
     private String item;
 
-    @Column(name="user_seq")
-    private Long userSeq;
+    @ManyToOne
+    @JoinColumn
+    private User user;
 
 }
