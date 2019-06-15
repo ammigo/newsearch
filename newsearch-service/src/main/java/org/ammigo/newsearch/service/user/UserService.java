@@ -17,8 +17,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public List<User> test() {
-        log.info("서비스 진입 성공");
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 }
