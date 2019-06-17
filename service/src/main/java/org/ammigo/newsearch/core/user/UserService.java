@@ -1,4 +1,4 @@
-package org.ammigo.newsearch.service.user;
+package org.ammigo.newsearch.core.user;
 
 import lombok.extern.slf4j.Slf4j;
 import org.ammigo.newsearch.core.user.model.User;
@@ -17,8 +17,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public List<User> test() {
-        log.info("서비스 진입 성공");
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 }

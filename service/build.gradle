@@ -17,7 +17,9 @@ dependencies {
 
     // spring data jap 2.1.5 version 사용
     compile('org.springframework.boot:spring-boot-starter-data-jpa:2.1.5.RELEASE')
-
+    
     // h2 database 사용
     compile('com.h2database:h2:1.4.199')
+    testCompile('org.assertj:assertj-core:3.10.0')
+    testCompile('org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE')
 }
